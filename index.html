@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="top">
+        <i
+          class="fa-solid fa-less-than"
+          onclick="prev()"
+          class="arrow left"
+          id="left"
+        ></i>
+        <div class="main">
+          <div class="sliding" id="slider">
+            <img src="./image/img-1.jfif" class="image" />
+            <img src="./image/img-2.jfif" class="image" />
+            <img src="./image/img-3.jfif" class="image" />
+            <img src="./image/img-4.jfif" class="image" />
+          </div>
+        </div>
+    
+        <i
+          class="fa-solid fa-greater-than"
+          onclick="next()"
+          class="arrow right"
+          id="right"
+        ></i>
+      </div>
+      <div class="bottom" id="btmImg">
+        <div class="images"><img src="./image/img-1.jfif" /></div>
+        <div class="images"><img src="./image/img-2.jfif" /></div>
+        <div class="images"><img src="./image/img-3.jfif" /></div>
+        <div class="images"><img src="./image/img-4.jfif" /></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
